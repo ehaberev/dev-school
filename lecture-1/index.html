@@ -7,7 +7,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>reveal.js</title>
+    <title>Школа разработчиков. Занятие 1</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
@@ -26,6 +29,10 @@
         : 'css/print/paper.css';
       document.getElementsByTagName('head')[0].appendChild(link);
     </script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
   </head>
   <body>
     <div class="reveal">
@@ -36,12 +43,79 @@
           <p>
             <small>
               <strong>Организаторы:</strong>
-              <a href="http://perm-itnetwork.ru/">Пермский сетевой ИТ-университет</a> совместно с
-              <a href="http://pstu.ru/">ПНИПУ</a> и
-              <a href="http://xn--b1al2a.xn--p1ai/">ГК ИВС</a>
+              <a href="http://perm-itnetwork.ru/" target="_blank">Пермский сетевой ИТ-университет</a> совместно с
+              <a href="http://pstu.ru/" target="_blank">ПНИПУ</a> и
+              <a href="http://xn--b1al2a.xn--p1ai/" target="_blank">ГК ИВС</a>
             </small>
           </p>
         </section>
+
+        <section>
+          <h2>О Группе компаний ИВС</h2>
+          <ol>
+            <li>Системный интегратор</li>
+            <li><strong>29 лет</strong> на рынке</li>
+            <li>Порядка <strong>10 департаментов</strong>, около <strong>500 человек</strong></li>
+            <li>Департамент информационных систем, более <strong>150 человек</strong></li>
+            <li><a href="http://devcareer.ivs-corp.ru/" target="_blank">Проекты и вакансии</a> в ДИС</li>
+          </ol>
+        </section>
+
+				<section>
+					<section>
+						<h2>Проекты ДИС</h2>
+						<p>В основном работаем в B2G</p>
+						<p>Проекты ДИС на <strong>Ember.js + .NET</strong><br />на <strong>начало 2019 г.</strong></p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>АРМ ТИ</h2>
+						<p>Автоматизация деятельности теловых инспекторов</p>
+            <p>Внедрено в <strong>г. Красноярске</strong></p>
+            <img src="images/arm-ti.png" alt="Автоматизированное рабочее место теплового инспектора">
+					</section>
+					<section>
+						<h2>ИС "ММЦ"</h2>
+						<p>Многофунциональный миграционный центр</p>
+            <p>Внедрено в <strong>г. Перми</strong></p>
+            <img src="images/mmc.png" alt="Многофунциональный миграционный центр">
+					</section>
+					<section>
+						<h2>ИС "Реестр МСП"</h2>
+						<p>Реестр субъектов малого и среднего предпринимательства</p>
+            <p>Система для администрации <strong>г. Сургута</strong></p>
+            <img src="images/reestr-msp.png" alt="Реестр субъектов малого и среднего предпринимательства">
+					</section>
+					<section>
+						<h2>ЕАИС "Социальный регистр населения"</h2>
+						<p>Информационная система для соц. защиты</p>
+            <p>Внедрено в <strong>Пермском крае</strong></p>
+            <img src="images/soc-zaschita.png" alt="Социальный регистр населения">
+					</section>
+					<section>
+						<h2>Портал ИСОГД</h2>
+						<p>Обеспечение градостроительной деятельности</p>
+            <p><a href="https://isogd.gorodperm.ru/" target="_blank">Внедрено</a> в <strong>г. Пермь</strong></p>
+            <img src="images/portal-isogd.png" alt="Информационная система обеспечения градостроительной деятельности">
+					</section>
+					<section>
+						<h2>ЕВКД</h2>
+						<p>Единый виртуальный кабинет депутата</p>
+            <p>Внедрено в <strong>Пермском крае</strong></p>
+            <img src="images/evkd.png" alt="Единый виртуальный кабинет депутата">
+					</section>
+					<section>
+						<h2>Проекты ДИС</h2>
+						<p>В 2019 г. началась разработка еще нескольких информационных систем</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
 
         <section>
           <h2>О себе</h2>
@@ -143,15 +217,15 @@
             <li><strong>Занятие 1</strong>. Принципы и инструменты веб-разработки</li>
             <li><strong>Занятие 2</strong>. Командная работа в Git и GitHub</li>
             <li><strong>Занятие 3</strong>. Командная работа в Azure Devops</li>
-            <li><strong>Занятия 4</strong>. Ключевые концепции и особенности современного JS</li>
-            <li><strong>Занятия 5</strong>. Тестирование и отладка JS-приложений</li>
+            <li><strong>Занятие 4</strong>. Ключевые концепции современного JS</li>
+            <li><strong>Занятие 5</strong>. Тестирование и отладка JS-приложений</li>
             <li>
-              <strong>Занятия 6</strong>. Автоматическая сборка и документирование JS-приложений
+              <strong>Занятие 6</strong>. Автоматическая сборка и документирование JS-приложений
             </li>
-            <li><strong>Занятия 7</strong>. Клиентские JS-фреймворки. Знакомство с Ember.js</li>
-            <li><strong>Занятия 8</strong>. Разработка REST API-бакенда на .NET Core</li>
-            <li><strong>Занятия 9</strong>. Развертывание JS-приложений</li>
-            <li><strong>Занятия 10</strong>. Защита командных проектов. Подведение итогов</li>
+            <li><strong>Занятие 7</strong>. Клиентские JS-фреймворки. Знакомство с Ember.js</li>
+            <li><strong>Занятие 8</strong>. Разработка REST API-бакенда на .NET Core</li>
+            <li><strong>Занятие 9</strong>. Развертывание JS-приложений</li>
+            <li><strong>Занятие 10</strong>. Защита командных проектов. Подведение итогов</li>
           </ul>
         </section>
 
@@ -189,7 +263,7 @@
 
         <section>
           <h2>Задания и рейтинг</h2>
-          <ul>
+          <ul style="font-size: 75%">
             <li>
               <strong>Основные задания:</strong>
               <ul>
@@ -211,6 +285,70 @@
             <li>Получение удостоверения: все выполненные задания и командный проект</li>
           </ul>
         </section>
+
+        <section>
+          <h2>Ценность обучения</h2>
+          <ul>
+            <li>Подбор материалов</li>
+            <li>Востребованные знания и умения в ГК ИВС и не только</li>
+            <li>Практический опыт, в том числе на основе реальных кейсов</li>
+            <li>Обратная связь от практикующих разработчиков</li>
+            <li>Возможность пройти стажировку в крупной ИТ-компании</li>
+            <li>Возможность "сократить путь" до реальных задач в ГК ИВС</li>
+          </ul>
+        </section>
+
+				<section>
+					<section>
+						<h2>Орг. вопросы</h2>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Регистрации, аккаунты</h2>
+            <ul>
+              <li>Регистрация в <a href="https://ednet.bulgakov.app/" target="_blank">LMS ИТ-университета</a></li>
+              <li>Добавление в закрытую скайп-группу</li>
+              <li>Аккаунт на <a href="https://github.com/" target="_blank">GitHub</a></li>
+            </ul>
+            </section>
+            <section>
+              <h2>Перечень ПО</h2>
+              <ol style="font-size: 60%">
+                <li><a href="https://nodejs.org/ru/" target="_blank">Node.js</a> v10.x</li>
+                <li><a href="https://emberjs.com/" target="_blank">Ember CLI</a> не ниже v3.12</li>
+                <li><a href="https://dotnet.microsoft.com/download/dotnet-core" target="_blank">.NET Core SDK</a> v3.0</li>
+                <li><a href="https://www.google.ru/chrome/" target="_blank">Google Chrome</a> не ниже v77.x</li>
+                <li>
+                  <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> не ниже v1.38 с плагинами:
+                  <ul>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" target="_blank">C#</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank">Debugger for Chrome</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig" target="_blank">EditorConfig for VS Code</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=felixrieseberg.vsc-ember-cli" target="_blank">Ember Cli in Visual Studio Code</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">ESLint</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint" target="_blank">Stylelint</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier - Code formatter</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://www.getpostman.com/downloads/" target="_blank">Postman</a> не ниже v7.6.x</li>
+                <li><a href="https://www.telerik.com/download/fiddler" target="_blank">Fiddler</a> не ниже v5.x</li>
+                <li><a href="https://dotnet.microsoft.com/download/dotnet-framework" target="_blank">.NET Framework</a> не ниже v4.5 (для Windows)</li>
+                <li><a href="https://visualstudio.microsoft.com/ru/vs/community/" target="_blank">Visual Studio Community 2019</a> (для Windows)</li>
+              </ol>
+            </section>
+            <section>
+						<h2>Орг. вопросы</h2>
+						<p>Ваши вопросы?</p>
+						<br>
+						<a href="#/12">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
       </div>
     </div>
 
@@ -221,9 +359,17 @@
       // - https://github.com/hakimel/reveal.js#configuration
       // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
         dependencies: [
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true },
           { src: 'plugin/highlight/highlight.js', async: true },
         ],
