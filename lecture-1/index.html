@@ -181,9 +181,6 @@
               <strong>Контент:</strong>
               <ul>
                 <li>Архитектура веб-приложений</li>
-                <li>Архитектурный паттерн MVC</li>
-                <li>Принципы создания хорошей архитектуры</li>
-                <li>Обзор инструментов для разработки</li>
                 <li>Задание на неделю</li>
               </ul>
             </li>
@@ -288,7 +285,7 @@
 
         <section>
           <h2>Ценность обучения</h2>
-          <ul>
+          <ul style="font-size: 80%">
             <li>Подбор материалов</li>
             <li>Востребованные знания и умения в ГК ИВС и не только</li>
             <li>Практический опыт, в том числе на основе реальных кейсов</li>
@@ -348,8 +345,205 @@
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
 						</a>
 					</section>
+        </section>
+
+        <section>
+          <h2>Модуль 1. Введение в веб-разработку</h2>
+          <ol style="font-size: 95%">
+            <li>Архитектура веб-приложений, клиент-сервер</li>
+            <li>Стек протоколов TCP/IP</li>
+            <li>Протокол HTTP</li>
+            <li>Клиентские и серверные технологии</li>
+            <li>Архитектуры MPA и SPA</li>
+            <li>Веб-сервисы, RESTful-сервисы</li>
+            <li>Инструменты разработки и отладки</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Архитектура веб-приложений</h2>
+          <ul>
+            <li>Архитектура клиент-сервер</li>
+            <li>Протокол HTTP</li>
+            <li>Веб-серверы</li>
+            <li>Веб-сокеты</li>
+            <li>MPA vs SPA</li>
+            <li>REST API</li>
+            <li>OData, GraphQL</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Клиент-серверная архитектура</h2>
+          <img src="images/client-server.png" alt="Клиент-серверная архитектура">
+        </section>
+
+        <section>
+          <h2>Варианты клиент-серверной архитектуры</h2>
+          <img src="images/tiers.png" alt="Варианты клиент-серверной архитектуры">
+        </section>
+
+        <section>
+          <h2>Стек протоколов TCP/IP</h2>
+          <img src="images/tcp-ip.png" alt="Стек протоколов TCP/IP">
+        </section>
+
+        <section>
+          <h2>Протокол HTTP</h2>
+          <img src="images/http.png" alt="Протокол HTTP">
+        </section>
+ 
+        <section>
+          <h2>Структура HTTP-запроса</h2>
+          <img src="images/http-example.png" alt="Структура HTTP-запроса">
+        </section>
+
+        <section>
+          <h2>Постоянные HTTP-соединения</h2>
+          <img src="images/http-connections.png" alt="Постоянные HTTP-соединения">
+        </section>
+
+        <section>
+          <h2>Хранение состояния в HTTP</h2>
+          <img src="images/http-state.png" alt="Постоянные HTTP-соединения">
+        </section>
+
+        <section>
+          <h2>Веб-серверы</h2>
+          <img src="images/http-servers.png" alt="Веб-серверы">
+        </section>
+
+        <section>
+          <h2>Статическое содержимое страниц</h2>
+          <img src="images/http-static-page.png" alt="Статическое содержимое страниц">
+        </section>
+
+        <section>
+          <h2>Динамическое содержимое страниц</h2>
+          <img src="images/http-dynamic-page.png" alt="Динамическое содержимое страниц">
+        </section>
+
+				<section>
+					<h2>Конфигурация PHP в виде модуля</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="1-3">
+LoadModule php5_module "C:/PHP/php5apache2_4.dll"
+PHPIniDir "C:/PHP"
+AddType application/x-httpd-php .php
+					</code></pre>
 				</section>
+
+				<section>
+            <h2>Конфигурация PHP в виде CGI/FastCGI</h2>
+            <pre><code class="hljs" data-trim data-line-numbers="1-6">
+AddType application/x-httpd-php phtml php
+&lt;Directory "c:/php"&gt;
+  Options ExecCGI
+&lt;/Directory&gt;
+ScriptAlias "/php_dir/" "c:/php/"
+Action application/x-httpd-php "/php_dir/php-cgi.exe"
+            </code></pre>
+          </section>
+  
+        <section>
+          <h2>HTTPS</h2>
+          <ul>
+            <li>Аутентификация</li>
+            <li>Целостность данных</li>
+            <li>Шифрование</li>
+          </ul>
+          <img src="images/https.png" alt="HTTPS">
+        </section>
+
+        <section>
+					<section>
+						<h2>Как это всё работает вместе</h2>
+						<p>Что происходит, когда в браузер вводится URL и нажимается Enter?</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>1. Определение IP-адреса через DNS</h2>
+						<ul>
+              <li>Проверка кеша браузера</li>
+              <li>Проверка кеша ОС</li>
+              <li>...</li>
+              <li>DNS-запрос</li>
+            </ul>
+					</section>
+					<section>
+            <h2>2. Формирование и отправка HTTP-запроса</h2>
+            <ul>
+              <li>GET-запрос</li>
+              <li>User-Aegent, Cookies,...</li>
+            </ul>
+          </section>
+					<section>
+            <h2>3. Обработка запроса и отправка HTTP-ответа</h2>
+            <ul>
+              <li>Поиск обработчика</li>
+              <li>Передача управления</li>
+              <li>Возврат результата</li>
+            </ul>
+          </section>
+					<section>
+            <h2>4. Отрисовка веб-страницы браузером</h2>
+            <ul>
+              <li>Загрузка ресурсов (CSS/JS/IMG)</li>
+              <li>Запуск JavaScript</li>
+              <li>Отрисовка страницы</li>
+              <li>...</li>
+            </ul>
+          </section>
+					<section>
+						<a href="#/27">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+        </section>
+        
+        <section>
+          <h2>Web Sockets</h2>
+          <p>Так работает HTTP:</p>
+          <img src="images/ws-http.png" alt="HTTP">
+        </section>
+
+        <section>
+          <h2>Web Sockets</h2>
+          <p>Так работают веб-сокеты:</p>
+          <img src="images/ws.png" alt="Web Sockets">
+        </section>
+
+        <section>
+          <h2>Multi Page Application</h2>
+          <img src="images/mpa.png" alt="Multi Page Application">
+        </section>
+        
+        <section>
+          <h2>Single Page Application</h2>
+          <img src="images/spa.png" alt="Single Page Application">
+        </section>       
+  
+        <section>
+          <h2>REST API</h2>
+          <a href="https://www.mockapi.io/" target="_blank">Сервис</a> для создания тестового RESTful API
+          <img src="images/rest-api.jpg" alt="Rest API">
+        </section>       
+
+        <section>
+          <h2>REST API стандарты и языки</h2>
+          <ul>
+            <li><a href="https://jsonapi.org/" target="_blank">JSON API</a></li>
+            <li><a href="https://www.odata.org/" target="_blank">OData</a></li>
+            <li><a href="https://graphql.org/" target="_blank">GraphQL</a></li>
+          </ul>
+        </section>       
       </div>
+
+      <section>
+        <h2>Задание</h2>
+      </section>       
     </div>
 
     <script src="js/reveal.js"></script>
