@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Школа разработчиков. Занятие 1</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Модуль 2</h1>
+          <h3>Технологии командной разработки</h3>
+        </section>
+
+        <section>
+          <h1>Занятие 2</h1>
+          <h3>Командная работа в Git и GitHub</h3>
+        </section>
+
+        <section>
+          <h2>План занятия</h2>
+          <ul style="font-size: 95%">
+            <li>Модель команды на проектах ДИС ГК ИВС</li>
+            <li>Технологическая платформа Flexberry</li>
+            <li>Процесс разработки в ДИС ГК ИВС</li>
+            <li>Задание</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Модель команды</h2>
+            <ul>
+              <li>Руководитель проекта</li>
+              <li>Аналитики</li>
+              <li>Ведущий разработчик</li>
+              <li>Разработчики</li>
+            </ul>
+            <br />
+            <a href="#" class="navigate-down">
+              <img
+                width="178"
+                height="238"
+                data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+          <section>
+            <h2>Руководитель проекта</h2>
+            <p>Управление проектом и его параметрами (бюджет, срок, качество)</p>
+          </section>
+          <section>
+            <h2>Аналитик</h2>
+            <ul>
+              <li>Общение с заказчиком</li>
+              <li>Разработка ТЗ, ЧТЗ</li>
+              <li>Создание модели предметной области</li>
+              <li>Постановка задач разработчикам</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Ведущий разработчик</h2>
+            <p>Управление процессом разработки (архитектура, команда)</p>
+          </section>
+          <section>
+            <h2>Разработчик</h2>
+            <ul>
+              <li>Реализация задач</li>
+              <li>Настройка инфраструктуры</li>
+              <li>Развертывание решений</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Модель команды</h2>
+            <br />
+            <a href="#/3">
+              <img
+                width="178"
+                height="238"
+                data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+                alt="Up arrow"
+                style="transform: rotate(180deg); -webkit-transform: rotate(180deg);"
+              />
+            </a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Платформа Flexbery</h2>
+            <img src="images/flexberry-logo.jpg" alt="Flexbery Platform" />
+            <br />
+            <a href="#" class="navigate-down">
+              <img
+                width="178"
+                height="238"
+                data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+
+          <section>
+            <h2>Назначение платформы</h2>
+            <img src="images/lifecycle.png" alt="Жизненный цикл приложения" />
+          </section>
+
+          <section>
+            <h2>Процесс разработки на платформе</h2>
+            <img src="images/process.png" alt="Процесс разработки на платформе Flexberry" />
+          </section>
+
+          <section>
+            <h2>Демо</h2>
+            <br />
+            <a href="#/4">
+              <img
+                width="178"
+                height="238"
+                data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+                alt="Up arrow"
+                style="transform: rotate(180deg); -webkit-transform: rotate(180deg);"
+              />
+            </a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Процесс разработки</h2>
+            <ol>
+              <li>Планирование итераций</li>
+              <li>Реализация задач</li>
+              <li>Интеграция изменений</li>
+              <li>Тестирование и выпуск версии</li>
+              <li>Развертывание версии</li>
+            </ol>
+            <br />
+            <a href="#" class="navigate-down">
+              <img
+                width="178"
+                height="238"
+                data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+          <section>
+            <h2>Планирование итераций</h2>
+            <img src="images/azure-boards.png" alt="Планирование итерации на Azure Boards" />
+          </section>
+          <section>
+            <h2>Реализация задач</h2>
+            <img src="images/git-flow.png" alt="git flow" />
+          </section>
+          <section>
+            <h2>Интеграция изменений</h2>
+            <ul>
+              <li>PR и CodeReview</li>
+              <li>CI/CD</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Тестирование и выпуск версии</h2>
+            <p>Обязательно создание релиза!</p>
+            <img src="images/testing.png" alt="Тестирование с использованием Azure Testing Plans" />
+          </section>
+          <section>
+            <h2>Развертывание версии</h2>
+            <ul>
+              <li>Вручную</li>
+              <li>Docker</li>
+              <li>Continuous Deployment</li>
+            </ul>
+            <br />
+            <a href="#/5">
+              <img
+                width="178"
+                height="238"
+                data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+                alt="Up arrow"
+                style="transform: rotate(180deg); -webkit-transform: rotate(180deg);"
+              />
+            </a>
+          </section>
+        </section>
+
+        <section>
+          <h2>Ресурсы по Git и GitHub</h2>
+        </section>
+
+        <section>
+          <h2>Задание на неделю</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
