@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Школа разработчиков. Занятие 3</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Модуль 2</h1>
+          <h3>Технологии командной разработки</h3>
+        </section>
+
+        <section>
+          <h1>Занятие 3</h1>
+          <h3>Командная работа с использованием Azure DevOps</h3>
+        </section>
+
+        <section>
+          <h2>План занятия</h2>
+          <ul style="font-size: 95%">
+            <li>Инфраструктура веб-проектов</li>
+            <li>Правила именования коммитов: стандарт Conventional Commits</li>
+            <li>Введение в Azure DevOps</li>
+            <li>Задание</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Инфраструктура веб-проектов</h2>
+          <p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/o0rudc7YTv0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </section>
+
+        <section>
+          <h2>Conventional Commits</h2>
+          <p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/wQAjp-lw8FI"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </section>
+
+        <section>
+          <h2>Введение в Azure DevOps</h2>
+          <p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/videoseries?list=PLlhqsC7hBaSf5JUzoSVqNoc1w4Dgy_Enr"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </section>
+
+        <section>
+          <h2>Задание на неделю</h2>
+          <p>
+            <a
+              href="https://flexberry.github.io/ru/tds_module2-tasks.html#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-2-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-azure-devops-tfs"
+              target="_blank"
+            >
+              Использование Azure DevOps
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
