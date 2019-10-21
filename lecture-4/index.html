@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Школа разработчиков. Занятие 4</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Модуль 3</h1>
+          <h3>Погружение в JavaScript-разработку</h3>
+        </section>
+
+        <section>
+          <h1>Занятие 4</h1>
+          <h3>Ключевые концепции современного JS</h3>
+        </section>
+
+        <section>
+          <h2>План занятия</h2>
+          <ul style="font-size: 95%">
+            <li>Настройка нового проекта</li>
+            <li>Базовые концепции JS</li>
+            <li>Лексическое окружение, замыкания, контекст вызова</li>
+            <li>Задание</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Настройка нового проекта</h2>
+          <img src="images/nodejs.png" alt="Принцип работы Node.js" />
+        </section>
+
+        <section>
+          <h2>Базовые концепции JS</h2>
+          <ul>
+            <li>Cобытийная модель</li>
+            <li>Асинхронность</li>
+            <li>Однопоточночть</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Лексическое окружение, замыкания, контекст вызова</h2>
+        </section>
+
+        <section>
+          <h2>Ресурсы по JavaScript</h2>
+        </section>
+
+        <section>
+          <h2>Задание на неделю</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
